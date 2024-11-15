@@ -5,8 +5,6 @@ public class Collatz {
 		int N = Integer.parseInt(args[0]);
 		String stringType = args[1];
 
-		boolean hailstone = true;
-
 		// the loop of seed 1 to N
 		for (int i = 1; i <= N; i++){
 
