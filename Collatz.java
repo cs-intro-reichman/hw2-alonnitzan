@@ -35,7 +35,6 @@ public class Collatz {
 				else cuurentNumber = (cuurentNumber * 3) + 1;
 
 				counterSteps += 1;
-				
 				outputToPrint += cuurentNumber + " ";
 			}
 
