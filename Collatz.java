@@ -39,10 +39,10 @@ public class Collatz {
 				outputToPrint += cuurentNumber + " ";
 			}
 
-			if (stringType.equals("v")) System.err.println(outputToPrint + "(" + counterSteps + ")");
+			if (stringType.equals("v")) System.out.println(outputToPrint + "(" + counterSteps + ")");
 		}
 
 		// prints summary line
-		System.out.println("Every one of the first " + N + " hailstone sequences reached 1.");
+		System.out.print("Every one of the first " + N + " hailstone sequences reached 1.");
 	}
 }
