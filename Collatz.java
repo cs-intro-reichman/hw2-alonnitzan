@@ -11,11 +11,11 @@ public class Collatz {
 		for (int i = 1; i <= N; i++){
 
 			int counterSteps = 1;
-			
+			String outputToPrint = "";
 			int cuurentNumber = i;
 
-			// prints current seed (starting cuurentNumber)
-			if (stringType.equals("v")) System.out.print(cuurentNumber + " ");
+			// add current seed (starting cuurentNumber) to string
+			outputToPrint += cuurentNumber + " ";
 			
 			// for the first irretation when i=1
 			if (cuurentNumber == 1){
@@ -23,8 +23,8 @@ public class Collatz {
 				cuurentNumber = (cuurentNumber * 3) + 1;
 				counterSteps += 1;
 				
-				// prints the new cuurentNumber
-				if (stringType.equals("v")) System.out.print(cuurentNumber + " ");
+				// add the new cuurentNumber
+				outputToPrint += cuurentNumber + " ";
 			}
 			
 			// the loop that checks the hailstone sequence and prints it
@@ -38,10 +38,10 @@ public class Collatz {
 
 				counterSteps += 1;
 				
-				if (stringType.equals("v")) System.out.print(cuurentNumber + " ");
+				outputToPrint += cuurentNumber + " ";
 			}
 
-			if (stringType.equals("v")) System.err.println("(" + counterSteps + ")");
+			if (stringType.equals("v")) System.err.println(outputToPrint + "(" + counterSteps + ")");
 		}
 
 		// prints summary line
